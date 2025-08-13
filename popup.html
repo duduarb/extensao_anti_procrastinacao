@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 300px; font-family: sans-serif; }
+    input[type="text"] { width: 100%; padding: 8px; margin-bottom: 10px; }
+    button { padding: 10px 15px; }
+    #siteList { list-style: none; padding: 0; }
+    #siteList li { display: flex; justify-content: space-between; align-items: center; padding: 8px; border-bottom: 1px solid #eee; }
+    .removeBtn { background-color: #c91919; color: white; border: none; padding: 4px 8px; cursor: pointer; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h2>Bloquear Sites</h2>
+  <input type="text" id="siteInput" placeholder="Ex: www.youtube.com">
+  <button id="addSite">Adicionar Site</button>
+  <ul id="siteList"></ul>
+  <script src="popup.js"></script>
+</body>
+</html>
