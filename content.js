@@ -1,5 +1,6 @@
-chrome.storage.sync.get('blockedSites', (data) => {
+chrome.storage.sync.get(['blockedSites', 'customBlockMessage'], (data) => {
   const blockedSites = data.blockedSites || [];
+  const customMessage = data.customBlockMessage || 'Vai estudar!';
   const currentUrl = window.location.hostname;
 
   if (blockedSites.some(site => currentUrl.includes(site))) {
@@ -17,7 +18,7 @@ chrome.storage.sync.get('blockedSites', (data) => {
     overlay.style.alignItems = 'center';
     overlay.style.zIndex = '999999';
 
-    overlay.textContent = 'PARE AGORA DE PROCRASTINAR! Vai estudar seu safado!';
+    overlay.textContent = customMessage;
 
     document.body.appendChild(overlay);
   }

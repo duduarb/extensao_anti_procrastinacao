@@ -3,18 +3,26 @@
 <head>
   <style>
     body { width: 300px; font-family: sans-serif; }
-    input[type="text"] { width: 100%; padding: 8px; margin-bottom: 10px; }
-    button { padding: 10px 15px; }
+    input[type="text"] { width: 100%; padding: 8px; margin-bottom: 10px; box-sizing: border-box; }
+    button { padding: 10px 15px; margin-bottom: 10px; }
     #siteList { list-style: none; padding: 0; }
     #siteList li { display: flex; justify-content: space-between; align-items: center; padding: 8px; border-bottom: 1px solid #eee; }
-    .removeBtn { background-color: #c91919; color: white; border: none; padding: 4px 8px; cursor: pointer; border-radius: 4px; }
+    .removeBtn { background-color: #ff4d4d; color: white; border: none; padding: 4px 8px; cursor: pointer; border-radius: 4px; }
   </style>
 </head>
 <body>
   <h2>Bloquear Sites</h2>
+
+  <div>
+    <label for="customMessage">Mensagem:</label>
+    <input type="text" id="customMessage" placeholder="Ex: Bora parar de procrastinar">
+    <button id="saveMessage">Salvar Mensagem</button>
+  </div>
+
   <input type="text" id="siteInput" placeholder="Ex: www.youtube.com">
   <button id="addSite">Adicionar Site</button>
   <ul id="siteList"></ul>
+
   <script src="popup.js"></script>
 </body>
 </html>

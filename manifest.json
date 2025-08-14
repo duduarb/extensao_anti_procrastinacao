@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "ANTI Proscrastinação",
+  "name": "Focar mais nos estudos",
   "version": "1.0",
-  "description": "Uma extensão para me ajudar a focar nos estudos",
+  "description": "Uma extensão para me ajudar a focar nos estudos bloqueando sites que me distraem.",
   "permissions": ["storage", "activeTab"],
   "action": {
     "default_popup": "popup.html",
