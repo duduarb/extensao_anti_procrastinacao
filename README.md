@@ -9,7 +9,7 @@ Um projeto criado com um único objetivo: me ajudar a estudar. Sempre que vou es
 
 ## Como instalar
 1. Baixe a pasta do projeto
-2. Abra o Chrome
+2. Abra o navegador
 3. Vá em Extensões
 4. Ative o Modo Desenvolvedor
 5. Clique em "Carregar sem compactação" e selecione a pasta baixada
